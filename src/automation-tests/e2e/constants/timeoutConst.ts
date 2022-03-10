@@ -1,0 +1,12 @@
+export const browserTimeout1Secs = 1000;
+export const browserTimeout5Secs = 5000;
+export const browserTimeout10Secs = 10000;
+export const browserTimeout20Secs = 20000;
+export const browserTimeout30Secs = 30000;
+export const browserTimeout40Secs = 40000;
+export const browserTimeout50Secs = 50000;
+export const browserTimeout60Secs = 60000;
+export const browserTimeout80Secs = 80000;
+export const browserTimeout100Secs = 100000;
+export const browserTimeout120Secs = 120000;
+export const browserTimeout240Secs = 240000;
