@@ -17,8 +17,8 @@ This tech tests will take no more than 2 hrs to finish.
 If you are going to use the existing framework, please check the blow steps, otherwise pls go to the Test Cases No.1 directly
 1. install nodejs LTS (https://nodejs.org/en/)
 2. clone the repo
-3. using any terminal to run npm ci to install the dependencies
-4. to run the sample test as login pls using the command npm run e2e
+3. using the bash terminal to run `npm ci` to install the dependencies
+4. to run the sample test pls using the command `npm run e2e` from bash terminal
 
 if you have problems on the driver version pls check the line 7 from wdio.conf.js file
 if you have problems on headless mode, pls check the line 74 from wdio.conf.js file
