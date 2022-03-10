@@ -7,6 +7,12 @@ Valocity Tech Test
 To finish the tech test, you can choose the tools or frameworks you want, or using the existing framework (WDIO)
 This tech tests will take no more than 2 hrs to finish.
 
+Testing url: https://www.tmsandbox.co.nz/
+
+User: Auto.Val@valtest.co.nz
+
+PWD: Valocity123
+
 ### Key Output
 
 1. pls try to use PMO
@@ -30,7 +36,7 @@ env password is in .env file
 
 #### Test on listing an item as general item:
 
-1. Goto the list general item page (/Sell/Category.aspx?group=GENERAL&rptpath=1-&fromLink=general)
+1. Goto the list general item page (https://www.tmsandbox.co.nz/Sell/Category.aspx?group=GENERAL&rptpath=1-&fromLink=general)
 2. Fill the Listing Title and choose from the category -> any category is fine
 3. Choose the 'List in only one category' radio button, then click Next button
 4. On the next page, fill the Description -> any description is fine, then click Next button
