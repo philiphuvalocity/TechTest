@@ -4,7 +4,8 @@ const envUrl = require('./config/sandbox-sites');
 const siteUrls = envUrl.siteInfo;
 
 const seleniumConfig = {
-  drivers: { chrome: { version: '99.0.4844.17' } }
+  drivers: { chrome: { version: '101.0.4951.64' } }
+
 };
 
 exports.config = {
@@ -71,7 +72,7 @@ exports.config = {
     acceptInsecureCerts: true,
     'goog:chromeOptions': {
       args: [
-        '--headless',
+       // '--headless',
         '--disable-gpu',
         '--disable-logging',
         '--disable-back-forward-cache',

@@ -42,4 +42,13 @@ export class LoginPage extends Base {
     // wait for the search box to be displayed
     return (await this.base.searchBox).isExisting();
   }
+
+  private async selectCategoryList (): Promise<void> {
+    // wait for the search box to be displayed
+    (await this.base.sellCategoriesList).isExisting();
+    (await this.base.sellCategoriesList).click();
+    console.log('============== List General Item page : Success =================');
+    (await this.base.selectGeneralItem).isExisting();
+    (await this.base.selectGeneralItem).click();
+       }
 }
