@@ -8,9 +8,9 @@
 */
 export class BaseElements {
   // login
-  get email () { return $('input#page_email'); }
-  get password () { return $('input#page_password'); }
-  get loginButton () { return $('button#LoginPageButton'); }
+  get email () { return $('input#Email'); }
+  get password () { return $('input#Password'); }
+  get loginButton () { return $('button#SignIn'); }
 
   // logout
   get logoutButton () { return $('form[action*="Members/Logout"]'); }

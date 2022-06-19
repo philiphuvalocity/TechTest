@@ -23,6 +23,8 @@ export class Base {
       console.log(`============== ${credentials.PASSWORD} =================`);
       await (await (this.base.email)).setValue(credentials.USERNAME);
       await (await (this.base.password)).setValue(credentials.PASSWORD);
+      console.log(`============== Waiting for Captcha - human I need you, you have 10 seconds =================`);
+      await this.timer(10); 
       await (await (this.base.loginButton)).click();
       // wait for the login success
       await this.waitForLoginSuccess();

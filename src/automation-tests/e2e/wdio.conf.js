@@ -71,7 +71,7 @@ exports.config = {
     acceptInsecureCerts: true,
     'goog:chromeOptions': {
       args: [
-        '--headless',
+        //'--headless', //removed because we need a human interaction to complete captcha
         '--disable-gpu',
         '--disable-logging',
         '--disable-back-forward-cache',
