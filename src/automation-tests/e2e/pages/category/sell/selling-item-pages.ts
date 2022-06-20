@@ -1,12 +1,8 @@
 import { Base } from '@pages/base';
+import { BaseElements } from '@pages/base-elements';
 
-const list_sell_link = '/Sell/Category.aspx?group=GENERAL&rptpath=1-&fromLink=general';
-const list_general_item_link = 'https://www.tmsandbox.co.nz/Sell/Category.aspx?group=GENERAL&rptpath=1-&fromLink=general';
-const list_title = 'Testing Title';
-const list_description = 'Testing Description';
-const list_start_price = '200';
-const list_unknow_shipping_costs = 'I do not know';
-const list_cash_only = 'yes';
+const list_title = 'HP Computer';
+
 
 export class SellingGeneralItemPage extends Base 
 {
@@ -15,20 +11,26 @@ export class SellingGeneralItemPage extends Base
         // loading the url/link
         
         console.log('============== Opening the link provided =================')
-        await browser.url(list_general_item_link);
-        await this.timer(10);
+
+        await browser.url('/Sell/Category.aspx?group=GENERAL&rptpath=1-&fromLink=general');
+        await this.timer(2);
         await browser.getUrl();
-                
+
+        try{
+
+          await browser.waitUntil(async () => (await (this.base.listTitle)).isClickable());
+          console.log(`============== Page loaded to add the new List =================`);   
+
+        } catch (error) {
+          console.log(`============== Error Page loaded to add the new List, Error: ${error} =================`);  
+        }
+
+        await (await (this.base.listTitle)).setValue(list_title);
+        
+        await this.timer(2);
+        //await browser.getUrl();
+        console.log(`============== Waiting for the Category to be selected =================`);                
         console.log('============== Link verified =================')
-
-        // checking if the page is available
-
-        try {
-            // check the listing page is loaded
-            console.log('========== Listing page Loaded successfully ==========');
-          } catch (error) {
-            console.log(`========== Listing page Load Error: ${error} ==========`);
-          }
     }
 }
 
