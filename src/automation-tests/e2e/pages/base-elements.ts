@@ -60,7 +60,7 @@ export class BaseElements {
 
   get nextExtras () { return $('#promo-submit');}
 
-  get startMyAuction () { return $('#Start my Auction');}
+  get startMyAuction () { return $('#submit_sell');}
 
   get auctionStarted () { return $('#Your auction has started.');}
   

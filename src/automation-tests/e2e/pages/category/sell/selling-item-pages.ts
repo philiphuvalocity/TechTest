@@ -55,6 +55,8 @@ export class SellingGeneralItemPage extends Base
         await (await this.base.nextButton).isClickable();
         await (await this.base.nextButton).click();
         await this.timer(1);
+
+        //could not find the correct function/class to find the element;
               
         //await (await (this.base.descriptionListDetails)).isClickable();
         //await (this.base.descriptionListDetails).click();
@@ -102,7 +104,7 @@ export class SellingGeneralItemPage extends Base
         await (this.base.startMyAuction).click();
         await this.timer(1);
 
-        await (await (this.base.auctionStarted)).isDisplayed();
+        await this.waitForActionStartedNote();
         
         console.log(`============== Auction Started =================`);
 
@@ -114,6 +116,12 @@ export class SellingGeneralItemPage extends Base
 private async waitForListingTileBox (): Promise<boolean> {
   // wait for the search box to be displayed
   return (await this.base.listTitle).isExisting();
+
+}
+
+private async waitForActionStartedNote (): Promise<boolean> {
+  // wait for the search box to be displayed
+  return (await this.base.auctionStarted).isExisting();
 
 }
 }

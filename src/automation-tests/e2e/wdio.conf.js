@@ -31,7 +31,7 @@ exports.config = {
   //
   runner: 'local',
   specs: [
-    './src/automation-tests/**/**/*.e2e.ts'
+    './src/automation-tests/**/**/*.e3e.ts'
   ],
   suites: {},
   // Patterns to exclude.
