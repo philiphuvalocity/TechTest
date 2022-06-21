@@ -26,7 +26,7 @@ If you have problems on the driver version, please check line 7 from wdio.conf.j
 If you have problems on headless mode, pls check line 74 from wdio.conf.js file. 
 
 sample test is in tests/login/login.e2e.ts
-env password is in .env file
+Create a file called src/automation-tests/e2e/.env adding the parameter SandboxPassword with the password.
 
 ## Test Case No. 1 (E2E UI)
 

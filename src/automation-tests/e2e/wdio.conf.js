@@ -31,7 +31,7 @@ exports.config = {
   //
   runner: 'local',
   specs: [
-    './src/automation-tests/**/**/*.e2e.ts'
+    './src/automation-tests/**/**/*.e3e.ts'
   ],
   suites: {},
   // Patterns to exclude.
@@ -71,7 +71,7 @@ exports.config = {
     acceptInsecureCerts: true,
     'goog:chromeOptions': {
       args: [
-        '--headless',
+        //'--headless', //removed because we need a human interaction to complete captcha
         '--disable-gpu',
         '--disable-logging',
         '--disable-back-forward-cache',
